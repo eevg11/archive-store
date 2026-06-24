@@ -3,7 +3,7 @@
 A sleek, minimalist, and fully interactive single-page e-commerce store built for a conceptual clothing brand. This project demonstrates modern responsive layouts, data-driven UI generation, and dynamic shopping cart logic using vanilla web technologies.
 
 ## 🚀 Live Demo
-👉 [Launch Live Project](YOUR_GITHUB_PAGES_LINK_HERE)
+👉 [Launch Live Project](https://eevg11.github.io/archive-store/)
 
 ## ✨ Core Features
 * **Dynamic Catalog Rendering:** Products are generated dynamically from a JavaScript data structure (simulating a backend API).
