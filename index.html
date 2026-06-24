@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIVE // Conceptual Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">ARCHIVE</div>
+        <nav class="nav">
+            <a href="#catalog">Catalog</a>
+            <a href="#benefits">About</a>
+            <button class="btn-cart" id="cart-btn">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NEW ERA OF STYLE</h1>
+            <p>Minimalism, geometry, and comfort in every detail.</p>
+            <a href="#catalog" class="btn-primary">View Collection</a>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Why ARCHIVE?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Quality</h3>
+                <p>Premium Italian fabrics, resistant to wear and tear.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Exclusivity</h3>
+                <p>Limited drops. You won't meet a double in your city.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Fit</h3>
+                <p>Garments fit perfectly on any body type due to complex patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <h2>Collection</h2>
+        
+        <div class="catalog-controls">
+            <div class="filters">
+                <button class="btn-filter active" data-category="all">All</button>
+                <button class="btn-filter" data-category="hoodie">Hoodies</button>
+                <button class="btn-filter" data-category="pants">Pants</button>
+                <button class="btn-filter" data-category="boots">Boots</button>
+            </div>
+            <div class="sort-wrapper">
+                <select id="sort-select">
+                    <option value="default">Sorting</option>
+                    <option value="cheap">Price: Low to High</option>
+                    <option value="expensive">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="catalog-grid" id="catalog-grid"></div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h3>Cart</h3>
+            <button id="close-cart" class="btn-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: $<span id="cart-total-price">0</span></div>
+            <button class="btn-checkout" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 ARCHIVE CLOTHING. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
